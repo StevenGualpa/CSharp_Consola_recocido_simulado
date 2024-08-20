@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|c:\\proyectos\\c#\\csharp_consola_recocido_simulado\\csharp_consola_recocido_simulado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|c:\\proyectos\\c#\\csharp_consola_recocido_simulado\\csharp_consola_recocido_simulado\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|solutionrelative:professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|c:\\proyectos\\c#\\csharp_consola_recocido_simulado\\csharp_consola_recocido_simulado\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|solutionrelative:room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|c:\\proyectos\\c#\\csharp_consola_recocido_simulado\\csharp_consola_recocido_simulado\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|solutionrelative:course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|c:\\proyectos\\c#\\csharp_consola_recocido_simulado\\csharp_consola_recocido_simulado\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19942174-CC48-4853-867D-EE8BD39BA736}|CSharp_Consola_recocido_simulado.csproj|solutionrelative:schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Professor.cs",
+              "DocumentMoniker": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Professor.cs",
+              "RelativeDocumentMoniker": "Professor.cs",
+              "ToolTip": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Professor.cs",
+              "RelativeToolTip": "Professor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T03:54:51.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Room.cs",
+              "RelativeDocumentMoniker": "Room.cs",
+              "ToolTip": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Room.cs",
+              "RelativeToolTip": "Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T03:54:25.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Course.cs",
+              "RelativeDocumentMoniker": "Course.cs",
+              "ToolTip": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Course.cs",
+              "RelativeToolTip": "Course.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T03:53:58.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Schedule.cs",
+              "RelativeDocumentMoniker": "Schedule.cs",
+              "ToolTip": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Schedule.cs",
+              "RelativeToolTip": "Schedule.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAkwBUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T03:52:30.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Proyectos\\C#\\CSharp_Consola_recocido_simulado\\CSharp_Consola_recocido_simulado\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAQwFEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T03:51:39.291Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

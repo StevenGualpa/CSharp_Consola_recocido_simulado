@@ -1,0 +1,7 @@
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\bin\Debug\CSharp_Consola_recocido_simulado.exe.config
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\bin\Debug\CSharp_Consola_recocido_simulado.exe
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\bin\Debug\CSharp_Consola_recocido_simulado.pdb
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\obj\Debug\CSharp_Consola_recocido_simulado.csproj.AssemblyReference.cache
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\obj\Debug\CSharp_Consola_recocido_simulado.csproj.CoreCompileInputs.cache
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\obj\Debug\CSharp_Consola_recocido_simulado.exe
+C:\Proyectos\C#\CSharp_Consola_recocido_simulado\obj\Debug\CSharp_Consola_recocido_simulado.pdb

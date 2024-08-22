@@ -11,7 +11,7 @@ namespace CSharp_Consola_recocido_simulado
     {
 
         static Random random = new Random();
-        static Dictionary<string, Course> Courses = new Dictionary<string, Course>();
+        static Dictionary<string, Curso> Courses = new Dictionary<string, Curso>();
         static Dictionary<string, Room> Rooms = new Dictionary<string, Room>();
         static Dictionary<string, Professor> Professors = new Dictionary<string, Professor>();
 
@@ -27,7 +27,7 @@ namespace CSharp_Consola_recocido_simulado
                 if (line.Trim().StartsWith("#"))
                 {
                     section = line.Trim();
-                    continue; // Esto asegura que no intentemos procesar las líneas de encabezado como datos.
+                    continue;
                 }
 
                 var parts = line.Split(',').Select(p => p.Trim()).ToArray();
@@ -36,8 +36,8 @@ namespace CSharp_Consola_recocido_simulado
                     switch (section)
                     {
                         case "# Cursos":
-                            if (parts[0] == "ID") continue; // Ignora la línea de encabezado de cada sección
-                            Courses[parts[0]] = new Course
+                            if (parts[0] == "ID") continue;
+                            Courses[parts[0]] = new Curso
                             {
                                 Id = parts[0],
                                 Name = parts[1],
@@ -73,19 +73,39 @@ namespace CSharp_Consola_recocido_simulado
         }
 
 
+
+        static Cronograma GenerateInitialSchedule()
+        {
+            Cronograma cronograma = new Cronograma();
+            // Asigna horarios iniciales a los cursos de manera aleatoria
+            foreach (var course in Courses.Values)
+            {
+                List<int> times = new List<int>();
+                for (int i = 0; i < course.StudentCount; i++)
+                {
+
+                    times.Add(random.Next(8, 17)); // Horario inicial y donde termine
+                }
+                cronograma.Classes.Add(course.Id, times);
+            }
+            return cronograma;
+        }
+
+
+        static Cronograma GenerateNeighbor(Cronograma current)
+        {
+            Cronograma neighbor = new Cronograma(current);
+            // Implementar la lógica para generar vecino
+            return neighbor;
+        }
+
+
         // Funciones para Simulated Annealing
-        static double CalculateCost(Schedule schedule)
+        static double CalculateCost(Cronograma cronograma)
         {
             double cost = 0;
             // Implementar la lógica de costo
             return cost;
-        }
-
-        static Schedule GenerateNeighbor(Schedule current)
-        {
-            Schedule neighbor = new Schedule(current);
-            // Implementar la lógica para generar vecino
-            return neighbor;
         }
 
         static bool AcceptanceCriterion(double currentCost, double newCost, double temperature)
@@ -95,61 +115,63 @@ namespace CSharp_Consola_recocido_simulado
             return Math.Exp((currentCost - newCost) / temperature) > random.NextDouble();
         }
 
-        static Schedule SimulatedAnnealing()
+        static Cronograma SimulatedAnnealing()
         {
             double temperature = 1000.0;
             double coolingRate = 0.95;
-            Schedule currentSchedule = GenerateInitialSchedule();
-            Schedule bestSchedule = currentSchedule;
-            double currentCost = CalculateCost(currentSchedule);
+            Cronograma currentCronograma = GenerateInitialSchedule();
+            Cronograma bestCronograma = currentCronograma;
+            double currentCost = CalculateCost(currentCronograma);
 
             while (temperature > 1)
             {
-                Schedule newSchedule = GenerateNeighbor(currentSchedule);
-                double newCost = CalculateCost(newSchedule);
+                Cronograma newCronograma = GenerateNeighbor(currentCronograma);
+                double newCost = CalculateCost(newCronograma);
 
                 if (AcceptanceCriterion(currentCost, newCost, temperature))
                 {
-                    currentSchedule = newSchedule;
+                    currentCronograma = newCronograma;
                     currentCost = newCost;
 
-                    if (newCost < CalculateCost(bestSchedule))
+                    if (newCost < CalculateCost(bestCronograma))
                     {
-                        bestSchedule = newSchedule;
+                        bestCronograma = newCronograma;
                     }
                 }
 
                 temperature *= coolingRate;
             }
 
-            return bestSchedule;
+            return bestCronograma;
         }
 
 
-        static Schedule GenerateInitialSchedule()
+        static void PrintSchedule(Cronograma cronograma, string title)
         {
-            Schedule schedule = new Schedule();
-            // Asigna horarios iniciales a los cursos de manera aleatoria dentro de las restricciones básicas
-            foreach (var course in Courses.Values)
+            Console.WriteLine(title);
+            foreach (var classEntry in cronograma.Classes)
             {
-                List<int> times = new List<int>();
-                for (int i = 0; i < course.StudentCount; i++)
-                {
-                    // Asumiendo que 'times' representa bloques de tiempo, ej: 9 = 9AM, 10 = 10AM, etc.
-                    times.Add(random.Next(8, 17)); // Horario entre 8AM y 5PM
-                }
-                schedule.Classes.Add(course.Id, times);
+                string courseId = classEntry.Key;
+                var times = classEntry.Value;
+                Console.WriteLine($"Curso: {Courses[courseId].Name}, Horarios: {String.Join(", ", times)}");
             }
-            return schedule;
         }
 
 
         static void Main(string[] args)
         {
 
-            LoadData("schedule_data.txt");
-            Schedule optimalSchedule = SimulatedAnnealing();
-            Console.WriteLine("Optimal schedule found with cost: " + CalculateCost(optimalSchedule));
+            LoadData("schedule_data.txt");  // Carga los datos necesarios
+
+            Console.WriteLine("Generando horario inicial...");
+            Cronograma initialCronograma = GenerateInitialSchedule();  // Genera el horario inicial
+            PrintSchedule(initialCronograma, "Horario Inicial");  // Imprime el horario inicial
+
+            Console.WriteLine("\nOptimizando el horario mediante recocido simulado...");
+            Cronograma optimalCronograma = SimulatedAnnealing();  // Optimiza el horario
+            PrintSchedule(optimalCronograma, "Horario Final");  // Imprime el horario final
+
+            Console.WriteLine("Optimal schedule found with cost: " + CalculateCost(optimalCronograma));
             Console.ReadKey();
         }
 

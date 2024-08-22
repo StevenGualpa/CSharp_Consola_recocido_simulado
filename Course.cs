@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Consola_recocido_simulado
 {
-    class Course
+    class Curso
     {
         public string Id;
         public string Name;

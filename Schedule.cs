@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace CSharp_Consola_recocido_simulado
 {
-    class Schedule
+    class Cronograma
     {
         public Dictionary<string, List<int>> Classes;
 
-        public Schedule()
+        public Cronograma()
         {
             Classes = new Dictionary<string, List<int>>();
         }
 
-        public Schedule(Schedule other)
+        public Cronograma(Cronograma other)
         {
             Classes = new Dictionary<string, List<int>>(other.Classes);
         }

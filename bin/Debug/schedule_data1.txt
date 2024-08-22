@@ -1,0 +1,31 @@
+# Cursos
+ID, Nombre, Número de Estudiantes, Requerimientos
+101, Matemáticas, 30, proyector
+102, Física, 25, laboratorio
+103, Literatura, 20, 
+104, Historia, 15, 
+105, Química, 10, laboratorio
+
+# Aulas
+ID, Capacidad, Recursos
+201, 30, proyector
+202, 25, laboratorio
+203, 20, 
+204, 15, 
+205, 10, laboratorio
+
+# Profesores
+ID, Nombre, Disponibilidad (horas)
+301, Prof. Sánchez, 9-11
+302, Prof. Ramírez, 9-11
+303, Prof. López, 10-12
+304, Prof. Martínez, 11-13
+305, Prof. Hernández, 12-14
+
+# Restricciones y Preferencias
+Profesor, Curso, Preferencia de Horario
+301, 101, 9-11
+302, 102, 9-11
+303, 103, 10-12
+304, 104, 11-13
+305, 105, 12-14
